@@ -1,12 +1,11 @@
 <?php
-$name = 'Yoshi';
-$age = 30;
-// $name = 'Mario'; OVERWRITE VAR VALUE
+$stringOne = 'my email is ';
+$stringTwo = 'marion123@thenetninha.co.uk';
+// echo $stringOne . $stringTwo;
 
-// CONSTANT Variable
-
-define('NAME', 'Yoshi');
-
+$name = 'mario';
+$escaping = "the ninja screamed \"whhhhh\" ";
+$singleDoubleQutes = 'the ninja screamed "whhhhh"' ;
 ?>
 
 <!DOCTYPE html>
@@ -19,15 +18,74 @@ define('NAME', 'Yoshi');
 </head>
 
 <body>
-    <h1>User Profile Page</h1>
-    <div class="">
-        <?php echo $name ?>
+    <div>
+        concat with '.'
+        <div class="">
+            <?php
+            echo "$stringOne $stringTwo";
+            ?>
+        </div>
+        <div class="">
+            <?php
+            echo 'Hi my name is ' . $name;
+            ?>
+        </div>
+    </div>
+    <div>
+        concat with ""
+        <div class="">
+            <?php
+            echo "$stringOne $stringTwo";
+            ?>
+        </div>
     </div>
     <div class="">
-        <?php echo $age ?>
+        escaping:
+        <div class="">
+            <?php
+            echo $escaping
+            ?>
+        </div>
     </div>
     <div class="">
-        CONSTANT : <?php echo NAME ?>
+            singleDoubleQutes:
+        <div class="">
+            <?php
+            echo $singleDoubleQutes
+            ?>
+        </div>
+    </div>
+    <div class="">
+            string in certain index:
+        <div class="">
+            <?php
+            echo $singleDoubleQutes[0];
+            ?>
+        </div>
+    </div>
+    <div class="">
+            string length strlen(STRING):
+        <div class="">
+            <?php
+            echo strlen($singleDoubleQutes);
+            ?>
+        </div>
+    </div>
+    <div class="">
+          strtoupper(STRING):
+        <div class="">
+            <?php
+            echo strtoupper($singleDoubleQutes);
+            ?>
+        </div>
+    </div>
+    <div class="">
+    str_replace('whhhhh','kololo', $singleDoubleQutes):
+        <div class="">
+            <?php
+            echo str_replace('whhhhh','kololo', $singleDoubleQutes);
+            ?>
+        </div>
     </div>
 </body>
 

@@ -1,14 +1,40 @@
-variable should start with $ + letter OR $+_
+1. String concatenation
+-------------------------
+A
+<?php
+    $stringOne = 'my email is';
+    $stringTwo = 'marion123@thenetninha.co.uk';
+    
+    /*
+        in order to concatenate 2 string togather in php we add '.' between each string:
+    */
+    echo $stringOne.$stringOne;
+?>
 
-variable CAN NOT start with numbers or special chars(e.g. @)
+B 
+when we are using "" instead of '' we can concatenate it w/o using '.':
 
-user camelcase for variable names
+"$stringOne $stringTwo";
 
-/*
-Costant variable
-*/
-1. create constant variable using the 'define' function ==> define('NAME','Yoshi');
+2. escape chars
+----------------
+to insert special chars : "the ninja screamed /"whhhhh/" "
 
-2. use like this(w/o the $) ==> <?php echo NAME; ?>
+3. variable iterpulation 
+-------------------------------------------------------------------------------------------------------------------------------------
+we can also alernativly use  single + double quotes so the second double quote in "bla bla "yada yada" " 
+so it won't close the php string
+e.g.
+'the ninja screamed "whhhhh"' 
 
-3. (!!!) Constants cannot be overwrite
+4. substring
+-------------
+to get a string located in a certain index:
+$name[index]
+
+5. string functions
+--------------------
+A: strlen(STRING) => returns string length 
+B: strtoupper(STRING) => uppercase
+C: strtolower(STRING) => lowercase
+D: str_replace(new char/substring, old char/substring, STRING) =>
