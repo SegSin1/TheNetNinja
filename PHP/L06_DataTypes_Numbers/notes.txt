@@ -1,0 +1,25 @@
+flots, intergers 
+
+float 
+$radius = 25;
+
+integer
+$pi=3.14
+
+2. basic operators - *, / ,+ ,- ,**(power)
+
+3. order of operations - Brackets > Power > Division >= Multipications > Addition >= Substraction 
+
+4. incremenet & decrement operators - 
+ $radius++ => echo $radius++ will first show the current number and then increment 
+ ++$radius => echo will show the increment number
+
+5. shorthand operators +=, -=, /= ,*=
+ $radius+=2;
+ $radius*=2;
+
+ 6. number functions
+ A: floor()- floor to the nearset interger 
+ B: ceil() - ceil to the nearest integer
+ C: pi() - returns pi value
+
