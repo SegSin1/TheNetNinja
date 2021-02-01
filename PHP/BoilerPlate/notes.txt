@@ -1,0 +1,14 @@
+variable should start with $ + letter OR $+_
+
+variable CAN NOT start with numbers or special chars(e.g. @)
+
+user camelcase for variable names
+
+/*
+Costant variable
+*/
+1. create constant variable using the 'define' function ==> define('NAME','Yoshi');
+
+2. use like this(w/o the $) ==> <?php echo NAME; ?>
+
+3. (!!!) Constants cannot be overwrite
